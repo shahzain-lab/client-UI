@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+*
+{
+     margin: 0;
+    padding: 0; 
+      box-sizing: border-box;
+   
+} 
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1307&q=80);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+     position: relative;
+     
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+    z-index: -1;
+}
+.navbar::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .2;
+    z-index: -1;
+}
+
+.main-div {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+}
+.center-div {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+}
+.center-div h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #f6f6f6;
+    padding:20px 0;
+}
+.center-div p{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-bottom: 4rem;
+    color: #bebebe
+}
+.main-btn .btn1 {
+    border: 2px solid #FFF;
+    padding: 1.5rem 5rem;
+    border-radius: 2rem 2rem 3rem 3rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f6f6f6;
+    cursor: pointer;
+}
+.btn1:hover{
+    color: yellow;
+    border-color: yellow;
+    transform: translateY(-20px)!important;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+nav .navbar-brand{
+    margin: 2.5rem 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+nav .nav-item {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* ////////sec  section/// */
+
+.sec-header {
+    width: 100vw;
+    height: 100vh;
+    
+}
+.offers h1{
+    text-align: center;
+    margin: 10rem 0;
+    font-size: 5rem;
+    text-transform:capitalize;
+    font-weight: 600;
+}
+.finger h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+.finger p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.finger .learn {
+    text-align:center;
+    font-weight: 600;
+    border: 1px solid #fff;
+    color: #f6f6f6;
+    border-radius: 2rem 0 2rem 0;
+    background: blue;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    transition:.5s ease;   
+}
+.learn:hover{
+    color: blue;
+    background: #cfcfcf;
+    border-radius:blue;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.4);
+    transform: translateY(-10px);
+}
+.learn:active{
+    font-size: 1.8rem;
+}
+.side-img img{
+    border-radius:5rem 0 5rem 0 ;
+}
+.template{
+    width: 100vw;
+    height: 100vh;
+}
+.temp-head{
+    margin: 5rem;
+    text-align: center;
+}
+.temp-head h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #807e7e;
+}
+.temp-head p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2.5rem 0;
+    color: #565657;
+}
+
+
+/* .,.,.,.,.,.third sec,/., */
+
+
+
+.img-con {
+    position: relative;
+    margin: 4rem 0;
+    
+}
+.img-con img{
+    transition: .3s ease;
+    border-radius: .5rem;
+    
+}
+.img-con :not(img){
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #f0ebeb;
+    bottom:50%;
+    left: 30%;
+}
+
+.img-con p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* opacity: 0; */
+}
+.img-con button {
+    text-align: center;
+    outline: none;
+    border-radius: 1rem 1rem 0rem 0;
+    font-size: 1.3rem;
+    padding: .8rem 1.5rem;
+    background: blue;
+    color: #fff;
+    border-color: #fff;
+    bottom: 30%;
+}
+.img-con .hide:hover{
+    color: blue;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+.img-con p,.hide{
+    visibility: hidden;
+}
+
+.img-con:hover img{
+    filter: blur(3px);
+    cursor: pointer;
+}
+.img-con:hover p{
+    visibility: visible;
+}
+.img-con:hover .hide{
+    visibility: visible;
+}
+
