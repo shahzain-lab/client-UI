@@ -10,6 +10,7 @@
 html{
     font-family: 'Raleway', sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 header{
     width: 100vw;
@@ -73,6 +74,9 @@ header::before {
     margin-bottom: 4rem;
     color: #bebebe
 }
+.main-btn{
+    position: relative;
+}
 .main-btn .btn1 {
     border: 2px solid #FFF;
     padding: 1.5rem 5rem;
@@ -84,7 +88,9 @@ header::before {
     text-transform: uppercase;
     color: #f6f6f6;
     cursor: pointer;
+    
 }
+
 .btn1:hover{
     color: yellow;
     border-color: yellow;
@@ -234,4 +240,159 @@ nav .nav-item {
 .img-con:hover .hide{
     visibility: visible;
 }
+
+
+/* ///////fourth */
+.user{
+    width: 100vw;
+    height: auto;
+    margin-top: 25rem;
+    text-align: center;
+}
+.user-head{
+    margin: 10rem 0 6rem  0;
+    text-align:center;
+}
+.user-head h1{
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+.user-head p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.user .fas{
+    margin:2rem ;
+    color: #dfdf1c;
+}
+.user h2{
+    text-transform: uppercase;
+    margin: 2rem;
+    font-size: 2rem;
+}
+.user p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* next//// */
+.service {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 8rem;background: #333;
+}
+.colm img{
+    width: 60rem;
+    height: 50rem;
+    border-radius: 2rem;
+    margin: 10rem 3rem 3rem 0rem;
+    box-shadow: 3rem 2rem 3rem 3rem hsla(0, 0%, 0%, 0.2);
+}
+.ser-head {
+    width: 100%;
+    height: 100%;
+    
+}
+.ser-head h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #f6f6f6;
+    font-weight: 500;
+    margin-top: 4rem;
+}
+.ser-head p{
+    color: #f6f6f6;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.animate{
+    margin-left: 10rem;
+    margin-top: 3rem;
+    padding: 0;
+    display: flex;
+}
+.animate li{
+    position:relative;
+     list-style: none;
+     width: 70px;
+     height: 70px;
+     margin: 0 10px;
+     border-radius: 50%;
+     box-sizing: border-box;
+     cursor: pointer;
+}
+.animate li::before,
+.animate li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0;  
+    transition: .5s; 
+    
+}
+.animate li:after{
+    filter: blur(40px);
+}
+.animate li:hover::before,
+.animate li:hover::after{
+    opacity: 1;
+}
+.animate li a{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom:10px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;z-index: 1;
+    background: #000;
+    font-size: 26px;
+    border-radius: 50%;
+}
+.animate li a .fab{
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: .5s;
+    transform: rotateY(0deg) scale(.8s);
+    opacity: .2;
+}
+.animate li a:hover .fab{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.animate li:nth-child(1) a,
+.animate li:nth-child(1):before,
+.animate li:nth-child(1)::after{
+    background: linear-gradient(45deg,#ff0057,#e64a19);
+}
+
+.animate li:nth-child(2) a,
+.animate li:nth-child(2):before,
+.animate li:nth-child(2)::after{
+    background: linear-gradient(45deg,#89ff00,#00bcd4 );
+}
+
+.animate li:nth-child(3) a,
+.animate li:nth-child(3):before,
+.animate li:nth-child(3)::after{
+    background: linear-gradient(45deg,#ff0000,#ffc107);
+}
+
+.animate li:nth-child(4) a,
+.animate li:nth-child(4):before,
+.animate li:nth-child(4)::after{
+    background: linear-gradient(45deg,#e91e63,#5d02ff);
+}
+
+
+
 
