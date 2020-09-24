@@ -12,6 +12,9 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+}
 header{
     width: 100vw;
     height: 100vh;
@@ -88,13 +91,13 @@ header::before {
     text-transform: uppercase;
     color: #f6f6f6;
     cursor: pointer;
-    
+    transition: .5s ease;
 }
 
 .btn1:hover{
     color: yellow;
     border-color: yellow;
-    transform: translateY(-20px)!important;
+    transform: translateY(-20px);
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
 }
 nav .navbar-brand{
@@ -105,7 +108,10 @@ nav .navbar-brand{
 nav .nav-item {
     margin-left: 5rem;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+}
+.nav-item a:hover{
+    color: #c2c21f!important;
 }
 
 /* ////////sec  section/// */
@@ -296,7 +302,7 @@ nav .nav-item {
     
 }
 .ser-head h1{
-    font-size: 4rem;
+    font-size: 3.6rem;
     text-align: center;
     color: #f6f6f6;
     font-weight: 500;
@@ -304,8 +310,9 @@ nav .nav-item {
 }
 .ser-head p{
     color: #f6f6f6;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-top: 2rem;
+    margin-right: 2rem;
 }
 
 .animate{
@@ -393,6 +400,205 @@ nav .nav-item {
     background: linear-gradient(45deg,#e91e63,#5d02ff);
 }
 
+/* fifth// */
+.sub{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    margin-top:15rem;
+}
+.sub .sample{
+    height: 400px;
+    width: 100%;
+    background: #0099ff;
+}
+.sub .input-group {
+    display: inline-block;
+    margin-top: 15rem;
+    position: absolute;
+    top: 0;   
+}
+.sub svg{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    width: 100vw;
+}
+.sub .input-group .form-control{
+    width: 72rem;
+    height: 50px;
+    border-radius: 0 3rem 0rem 0;
+}
+.sub label{
+    font-size:2.5rem;
+    font-weight: 500;
+    margin:0rem 0rem 2rem 5rem;
+    color: #706767;
+    align-items: center;
+}
+.input-group input{
+    font-size: 2rem;
+    border: 2px solid #00000033;
+}
+#basic-addon2{
+    border: 2px solid #fff;
+    margin: 2rem 0 0 3rem;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    border-radius:3rem ;
+}
+#basic-addon2:hover{
+    background: blue;
+    color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+}
 
+/* next... */
+.team{
+    width:100vw;
+    height: 100vh;
+    margin-top: 16rem;
+}
+.team-head{
+    margin: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.team-head h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #706e6e;
+    
+}
+.team-head p{
+    font-size: 1.6rem;
+    color: #706e6e;
+}
 
+/* ././. */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-top: 10rem;
+    
+    text-align: center;
+    font-family: arial;
+    transition: .5s;
+  }
+  .card:hover{
+    box-shadow: .6rem .6rem .6rem .6rem rgba(0,0,0,0.3);
+      transform: translateY(-20px);
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  .card h1{
+      text-transform: uppercase;
+  }
+  
+  .btn-new {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .at {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .btn-new:hover, .at:hover {
+    opacity: 0.7;
+  }
+  .para{
+      font-size: 2rem;
+  }
+
+  /* footer/? */
+
+  footer{
+      width: 100vw;
+      height: 50vh;
+      background: #333;
+      margin-top: 10rem;
+  }
+  footer .serve h1{
+      color: #f6f6f6;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 2rem;
+      margin-top: 3rem;
+  }
+  footer .serve p{
+      margin: 3rem;
+      font-size: 1.4rem;
+      color: #f6f6f6;
+      line-height: 1.8;
+  }
+  footer .contact h3{
+      margin: 3rem;
+      color: #f6f6f6;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.4rem;
+  }
+ footer ul{
+     align-items: center;
+}
+footer ul li{
+    list-style: none;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2;
+    color: #f6f6f6;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+footer li:hover{
+    font-size: 2.6rem;
+    color: blue;
+}
+
+.form h1{
+    text-transform: uppercase;
+    margin: 2.2rem;
+    color:#f6f6f6;
+}
+.form p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem;
+    color: #f6f6f6;
+    line-height:2
+}
+.use input{
+    width: 250px;
+    height: 40px;
+    font-size: 1.4rem;
+    outline: none;
+    box-shadow: 2rem 2rem 2rem 2em rgba(0, 0, 0, 0.2);
+
+}
+.use button{
+    padding: .6rem 1.5rem;
+    outline: none;
+    font-size: 1.4rem;
+}
+.use button:hover{
+    color:#fff;
+    background: blue;
+}
 
