@@ -46,9 +46,9 @@ header::before {
 }
 
 .main-div {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: inherit;
+    height: 100%;
     color: #fff;
     text-align: center;
 }
@@ -538,7 +538,7 @@ nav .nav-item {
       background: #333;
       margin-top: 10rem;
   }
-  footer .serve h1{
+  footer .serve h4{
       color: #f6f6f6;
       font-size: 2rem;
       text-align: center;
@@ -610,6 +610,7 @@ footer li:hover{
 @media only screen and (max-width: 768px){
     html{
         overflow-x: hidden;
+        scroll-behavior: smooth;
     }
     header .navbar-toggler-icon{
         background: #d3d60d;
@@ -623,17 +624,18 @@ footer li:hover{
         border:none;
         z-index: 1;
     }
-    header .nav-item{
+    header .nav-item{z-index: 567;
         text-align: center;
         border: 1px solid #fff;
         margin: .5rem 7rem;  position: relative;
     }
     header .navbar-brand{
         font-size: 2rem;
-    }.main-div .center-div{
+    }
+    .main-div .center-div{
         padding-bottom: 10rem;
         position: absolute;
-        top: 35%;
+        top: 55%;
         bottom: 50%;
     }
     .main-div h1{
@@ -650,6 +652,7 @@ footer li:hover{
     /* second/// */
     .offers h1{
         font-size: 3rem;
+        overflow-y: hidden;
     }
     .finger h1{
         font-size: 1.5rem;
@@ -665,9 +668,12 @@ footer li:hover{
     .side-img{
         margin:4rem 0 ;
     }
+    /* ///next// */
     
     .template{
-        margin: 20rem 0;
+        margin-top: 20rem;
+        overflow-y: hidden;
+        height:100vh;
     }
     .temp-head h1{
         font-size: 1.4rem;
@@ -683,7 +689,7 @@ footer li:hover{
     }
     /* //////next section./ */
     .user{
-        margin-top: 85rem;
+        margin-top: 10rem;
     }
     .user-head h1{
         font-size: 1.6rem;
@@ -702,7 +708,7 @@ footer li:hover{
     }
     .service{
         width: 100vw;
-        height: 100%;
+        height: 100%;overflow: hidden;
     }
     .service .colm img{
         width: 100%;
@@ -740,5 +746,57 @@ footer li:hover{
         text-decoration: none;
         font-size: 1.2rem;
     }
-    
+    .sub{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .sub .sample{
+        height:300px;
+    }
+    .sub .input-group{
+        /* padding-left: -15rem; */
+        position: absolute;
+        margin-left: 2rem;
+    }
+    .sub .input-group .form-control{
+        width: 25rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+    .sub .input-group label{
+        font-size: 1.3rem;
+        padding-left: 0rem;
+    }
+    .input-group #basic-addon2{
+        font-size: 1.3rem;
+        padding:.5rem 3rem;
+
+    }
+    .team{
+        width: 100%;
+        height:100%;
+        overflow-y:hidden;
+        margin-top: 3rem;
+    }
+    .team-head h1{
+        font-size: 3rem;
+    }
+    .team-head p{
+        font-size: 1.2rem;
+    }
+    .team .card{
+        overflow-y:hidden;
+        margin: 4rem 0;
+    }
+    footer{
+        height:100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    footer .contact{
+        align-items: center;
+        font-size: 1rem;
+    }
+   
 }
