@@ -688,8 +688,11 @@ footer input{
     }
     .img-con p{
         font-size: 1.2rem;
-        margin: 2rem 0;
+        margin: 2rem auto;
         text-align: center;
+    }
+    .img-con{
+        margin-left: 3rem;
     }
     /* //////next section./ */
     .user{
@@ -791,7 +794,7 @@ footer input{
     }
     .team .card{
         overflow-y:hidden;
-        margin: 4rem 0;
+        margin: 4rem auto;
     }
     footer{
         height:100%;
