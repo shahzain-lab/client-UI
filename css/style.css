@@ -564,7 +564,8 @@ nav .nav-item {
 }
 footer ul li{
     list-style: none;
-    text-align: center;
+    padding-left: 8rem;
+    /* text-align: center; */
     text-transform: capitalize;
     line-height: 2;
     color: #f6f6f6;
@@ -587,6 +588,9 @@ footer li:hover{
     margin: 2rem;
     color: #f6f6f6;
     line-height:2
+}
+footer input{
+    padding-left: 1rem;
 }
 .use input{
     width: 250px;
@@ -673,7 +677,7 @@ footer li:hover{
     .template{
         margin-top: 20rem;
         overflow-y: hidden;
-        height:100vh;
+        height:100%;
     }
     .temp-head h1{
         font-size: 1.4rem;
@@ -794,9 +798,18 @@ footer li:hover{
         width: 100%;
         overflow: hidden;
     }
-    footer .contact{
+    footer ul li {
+        padding-left: 6rem;
+    }
+    footer .form{
         align-items: center;
-        font-size: 1rem;
+    }
+    footer .use{
+        padding: 4rem;
+    }
+    footer input{
+        margin-bottom: 2rem;
+        
     }
    
 }
