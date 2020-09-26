@@ -675,7 +675,7 @@ footer input{
     /* ///next// */
     
     .template{
-        margin-top: 20rem;
+        margin-top: -20rem;
         overflow-y: hidden;
         height:100%;
     }
@@ -696,7 +696,7 @@ footer input{
     }
     /* //////next section./ */
     .user{
-        margin-top: 10rem;
+        margin: 20rem 0;
     }
     .user-head h1{
         font-size: 1.6rem;
