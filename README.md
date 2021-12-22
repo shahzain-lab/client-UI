@@ -1,4 +1,4 @@
 # client-side-layout 🎨
-By using only HTML and CSS i created a unique web having interactive user interface
+your next website builder | custom UI template
 Visit by clicking the link given below :-)
  https://shahzain-lab.github.io/client-UI/.
